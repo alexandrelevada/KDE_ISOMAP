@@ -1,2 +1,4 @@
-# KDE_ISOMAP
-A Kernel Density Estimation based ISOMAP
+# KDE-ISOMAP
+A Kernel Density Estimation based ISOMAP for Unsupervised Metric Learning
+
+Metric learning is concerned with building adaptive distance functions that are more meaningful than the Euclidean distance for a given dataset. Manifold learning algorithms are powerful mathematical tools that have been successfully applied to perform unsupervised metric learning. One limitation with these methods is that they can be quite sensitive to the presence of outliers and noise in data. In this paper, we propose a Kernel Density Estimation based ISOMAP that uses the relative entropy between probability density functions estimated in patches of the neighborhood graph with a non-parametric approach. With these measures, we build the entropic neighborhood graph, whose edges are weighted by a function of the relative entropies of the local patches instead of the Euclidean distance. Experimental results show that the proposed method can improve the quality of the clusters and the accuracies of different pattern classifiers for several datasets in comparison with other state-of-the-art algorithms, such as regular ISOMAP, t-SNE and UMAP.
