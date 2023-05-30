@@ -5,6 +5,10 @@ A kernel density estimation based ISOMAP for metric learning
 
 Created on Wed May 24 16:59:33 2022
 
+To run this script in Google Colab, please visit
+
+https://colab.research.google.com/drive/1K_-6AQwKDtssZgDKgj7k5Q4Tdj3lj6Bs?usp=share_link
+
 """
 
 # Imports
@@ -119,7 +123,7 @@ def myPCA(dados):
     novos_dados_pca = np.dot(Wpca, dados.T)
 
     return novos_dados_pca
-    
+
 
 '''
 Non-parametric estimation of the local densities 
@@ -484,7 +488,7 @@ acuracias = []
 scs = []
 
 for p in percs:
-    print('Percentil = %d' %p)
+    print('Percentile = %d' %p)
     dados_npiso = NonParamISO(dados, p, 2)
     #dados_npiso = NonParamISO_Mahalanobis(dados, p, 2)
     dados_npiso = dados_npiso.T
